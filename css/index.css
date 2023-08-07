@@ -1,0 +1,59 @@
+@import url(common.css);
+@import url(header.css);
+@import url(modal.css);
+@import url(sub.css);
+
+
+/*---------- mainpage style ----------*/
+
+/* 메인페이지 컨텐츠 좌우 여백 */
+.tabsection .tabContent_idx {padding: 0 20px;}
+
+
+/* 메인페이지 컨텐츠 */
+.tabsection .tabContent.tabContent_idx {margin-top: 40px;}
+.tabsection .tabContent.tabContent_idx>div ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+    background-color: #F4F4F4;
+    border: 1px solid rgba(0, 0, 0,0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.tabsection .tabContent.tabContent_idx>div ul li:first-child {margin-top: 0;}
+.tabsection .tabContent.tabContent_idx>div ul li>div>span:nth-of-type(1) {
+    display: inline-block;
+    background-color: #FC414A;
+    width: 42px;
+    height: 18px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 10px;
+    line-height: 18px;
+    text-align: center;
+}
+.tabsection .tabContent.tabContent_idx>div ul li>div>span:nth-of-type(2) {
+    display: inline-block;
+    font-family: 'roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #FC414A;
+    margin-left: 10px;
+    margin-right: 3px;
+}
+
+.tabsection .tabContent.tabContent_idx>div ul li>div p:nth-of-type(1) {font-size: 16px;font-weight: 500;color: #000;letter-spacing: -0.5px;line-height: 20px;margin-top: 10px;}
+.tabsection .tabContent.tabContent_idx>div ul li>div p:nth-of-type(2) {margin-top: 20px;font-weight: 500;font-size: 12px;color: #666;letter-spacing: -0.5px;}
+.tabsection .tabContent.tabContent_idx>div ul li img.pericon {width: 12px;height: 12px;margin-right: 10px;transform: translateY(3px);}
+.tabsection .tabContent.tabContent_idx>div ul li img.contentImg {width: 98px;height: 98px;}
+
+
+
+/* 컨텐츠 이미지, 내용 사이 간격 */
+@media (max-width: 359.9px) {
+    .tabsection .tabContent.tabContent_idx>div ul li {column-gap: 10px;}
+}

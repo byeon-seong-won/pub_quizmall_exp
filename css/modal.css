@@ -1,0 +1,60 @@
+/*---------- modal style ----------*/
+.popUp {
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    display: none;
+    z-index: 10000;
+    width: 90%;
+    max-width: 320px;
+    text-align: center;
+}
+.bgcolor {
+    background-color: rgba(0,0,0,0.7);
+    width:100%;
+    height:100%;
+    position: fixed;
+    left:0;
+    top:0;
+    z-index:9999;
+    display: none;
+    transition: 0.5s;
+}
+
+/* 모달창 여백 */
+.popUp>div.inputtext,
+.popUp>div.correct,
+.popUp>div.ask,
+.popUp>div.wrong .contentGr {padding-top: 40px;}
+
+/* 모달창 공통 */
+.popUp>div>div.contentGr {padding: 0 20px;}
+.popUp>div>div.contentGr h2 {font-size: 20px;font-weight: bold;margin-bottom: 22px;}
+.popUp>div>div.btnGr {margin-top: 40px;display: flex;height: 52px;}
+.popUp>div>div.btnGr button {flex: 1;border: none;line-height: 52px;}
+.popUp>div>div.btnGr button:first-child {border:1px solid #FC414A;color: #FC414A;background-color: #fff;}
+.popUp>div>div.btnGr button:last-child {background-color: #FC414A;color: #fff;}
+.popUp>div>div.contentGr input {border-radius: 4px;border: 1px solid rgba(0, 0, 0,0.1);height: 44px;width: 100%;padding: 0 10px;box-sizing: border-box;outline: none;}
+.popUp>div.ask>div.contentGr textarea::placeholder,
+.popUp>div>div.contentGr input::placeholder {color: #bbb;}
+.popUp>div>div.contentGr input:focus,
+.popUp>div.ask>div.contentGr textarea:focus {border: 1px solid #000;}
+.popUp>div>div.contentGr>p.detail {font-size: 16px;margin-top: 30px;}
+.popUp>div>div.contentGr>p.detail>span {color: #FC414A;font-weight: bold;}
+.popUp>div>div.contentGr img.conGRimg01 {width: 122px;height: 122px;}
+.popUp>div>div.contentGr img.conGRimg02 {width: 130px;height: 130px;}
+
+
+/* 오답창 */
+.popUp>div.wrong {position: relative;}
+.popUp>div.wrong>a>img.close {width: 14px;height: 14px;position: absolute;top: 20px;right: 20px;}
+.popUp>div.wrong>div.contentGr>p>span {color: #000;font-weight: 400;}
+
+
+/* 문의하기 */
+.popUp>div.ask>div.contentGr h2 {margin-bottom: 12px;}
+.popUp>div.ask>div.contentGr p {text-align: left;margin-bottom: 10px;font-size: 14px;}
+.popUp>div.ask>div.contentGr input {margin-bottom: 20px;}
+.popUp>div.ask>div.contentGr textarea {width: 100%;border: 1px solid rgba(0, 0, 0,0.1);border-radius: 4px;padding: 10px;box-sizing: border-box;outline: none;}
