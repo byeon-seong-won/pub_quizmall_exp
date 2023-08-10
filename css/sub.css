@@ -2,12 +2,12 @@
 /*---------- subpage style ----------*/
 
 /* 서브페이지 컨텐츠 좌우 여백 */
-.tabsection .tabContent.tabContent_sb>div>p {padding: 10px 20px;text-align: center;font-size: 12px;}
+.tabsection .tabContent.tabContent_sb>div>p {padding: 20px;text-align: center;font-size: 14px;}
 .tabsection .tabContent.tabContent_sb>div .contentbt {padding: 0 20px;margin-top: 28px;text-align: center;}
 
 
 /* 서브페이지 하단 버튼 */
-.bottombtn {position: fixed;bottom: 0;width: 100%;left: 0;text-align: center;color: #fff;background-color: #FC414A;height: 52px;line-height: 52px;}
+.bottombtn {cursor: pointer;;position: fixed;bottom: 0;width: 100%;left: 0;text-align: center;color: #fff;background-color: #FC414A;height: 52px;line-height: 52px;}
 
 
 /* 서브페이지 컨텐츠 */
@@ -22,15 +22,25 @@
 }
 .tabsection .tabContent.tabContent_sb>div>p>span:nth-child(3) {font-weight: 700;font-family: 'roboto',sans-serif;}
 .tabsection .tabContent.tabContent_sb>div>div.imgBefore {position: relative;}
-.tabsection .tabContent.tabContent_sb>div>div.imgBefore>div {position: absolute;bottom: 13px;left:13px;display: table;}
-.tabsection .tabContent.tabContent_sb>div>div.imgBefore>div>img {width: 16px;height: 16px;display: table-cell;vertical-align: middle;margin-right: 8px;}
-.tabsection .tabContent.tabContent_sb>div>div.imgBefore>div>span {color: #fff;font-size: 14px;display: table-cell;vertical-align: middle;}
-.tabsection .tabContent.tabContent_sb>div>div.imgBefore img.mainImg {width: 100%;}
-.tabsection .tabContent.tabContent_sb>div .contentbt>h1 {font-size: 20px;letter-spacing: -1px;color: #000;font-weight: bold;}
-.tabsection .tabContent.tabContent_sb>div .contentbt>h2 {font-size: 16px;color: #000;font-weight: 500;margin-top: 13px;}
+.tabsection .tabContent.tabContent_sb>div>div.imgBefore>div.imgbox {position: relative;}
+.tabsection .tabContent.tabContent_sb>div>div.imgBefore>div.imgbox:before {
+    position: absolute;
+    content: '';
+    bottom:0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 0, 0,0.5));
+}
+.tabsection .tabContent.tabContent_sb>div>div.imgBefore>div.imgbox img.mainImg {width: 100%;}
+.tabsection .tabContent.tabContent_sb>div>div.imgBefore>div.imgbotton {position: absolute;bottom: 13px;left:13px;display: table;}
+.tabsection .tabContent.tabContent_sb>div>div.imgBefore>div.imgbotton>img {width: 16px;height: 16px;display: table-cell;vertical-align: middle;margin-right: 8px;}
+.tabsection .tabContent.tabContent_sb>div>div.imgBefore>div.imgbotton>span {color: #fff;font-size: 14px;display: table-cell;vertical-align: middle;}
+.tabsection .tabContent.tabContent_sb>div .contentbt>h2 {font-size: 20px;letter-spacing: -1px;color: #000;font-weight: bold;}
+.tabsection .tabContent.tabContent_sb>div .contentbt>p {font-size: 16px;color: #000;font-weight: 500;margin-top: 13px;}
 .tabsection .tabContent.tabContent_sb>div .contentbt .hintbox {margin-top: 30px;background-color: #f0f0f0;padding: 22px 20px;border-radius: 4px;}
-.tabsection .tabContent.tabContent_sb>div .contentbt .hintbox h2 {font-family: 'roboto', sans-serif; font-size: 20px;font-weight: 700;}
-.tabsection .tabContent.tabContent_sb>div .contentbt .hintbox p {font-size: 14px;font-weight: 500;line-height: 22px;margin-top: 10px;}
+.tabsection .tabContent.tabContent_sb>div .contentbt .hintbox h3 {margin-top: 13px;font-family: 'roboto', sans-serif; font-size: 20px;font-weight: 700;}
+.tabsection .tabContent.tabContent_sb>div .contentbt .hintbox p {font-size: 15px;font-weight: 500;line-height: 22px;margin-top: 10px;}
 .tabsection .tabContent.tabContent_sb>div .contentbt .hintbox button {
     background-color: #fff;
     border: 1px solid #FC414A;
@@ -43,7 +53,7 @@
     font-weight: bold;
     margin-top: 13px;
 }
-.tabsection .tabContent.tabContent_sb>div .contentbt .winlist h2 {margin-top: 43px;font-weight: bold;font-size: 20px;}
+.tabsection .tabContent.tabContent_sb>div .contentbt .winlist h3 {margin-top: 43px;font-weight: bold;font-size: 20px;}
 .tabsection .tabContent.tabContent_sb>div .contentbt .winlist ul {margin-top: 40px;}
 .tabsection .tabContent.tabContent_sb>div .contentbt .winlist ul li {display: flex;justify-content: space-between;align-items: center;margin-top: 10px;}
 .tabsection .tabContent.tabContent_sb>div .contentbt .winlist ul li:first-child {margin-top: 0;}
@@ -62,8 +72,4 @@
 
     /* 상단 안내 창 */
     .tabsection .tabContent.tabContent_sb>div>p>span:nth-child(2) {width: 50px;}
-
-    /* 가운데 내용 줄바꿈 */
-    .tabsection .tabContent.tabContent_sb>div .contentbt .mobseco {display: none;}
-    .tabsection .tabContent.tabContent_sb>div .contentbt .mobfir {display: block;}
 }
