@@ -26,14 +26,20 @@
 /* 모달창 여백 */
 .popUp>div.inputtext,
 .popUp>div.correct,
-.popUp>div.ask,
 .popUp>div.wrong .contentGr {padding-top: 40px;}
+
+
+/* 모달창 placholder */
+.popUp>div>div.contentGr input:focus::placeholder,
+.popUp>div>div.contentGr textarea:focus::placeholder {opacity: 0;}
+
+
 
 /* 모달창 공통 */
 .popUp>div>div.contentGr {padding: 0 20px;}
-.popUp>div>div.contentGr h2 {font-size: 20px;font-weight: bold;margin-bottom: 22px;}
+.popUp>div>div.contentGr h3 {font-size: 20px;font-weight: bold;margin-bottom: 22px;}
 .popUp>div>div.btnGr {margin-top: 40px;display: flex;height: 52px;}
-.popUp>div>div.btnGr button {flex: 1;border: none;line-height: 52px;}
+.popUp>div>div.btnGr button {flex: 1;border: none;line-height: 52px;font-size: 15px;}
 .popUp>div>div.btnGr button:first-child {border:1px solid #FC414A;color: #FC414A;background-color: #fff;}
 .popUp>div>div.btnGr button:last-child {background-color: #FC414A;color: #fff;}
 .popUp>div>div.contentGr input {border-radius: 4px;border: 1px solid rgba(0, 0, 0,0.1);height: 44px;width: 100%;padding: 0 10px;box-sizing: border-box;outline: none;}
@@ -54,7 +60,9 @@
 
 
 /* 문의하기 */
+.popUp>div.ask {padding-top: 28px;}
 .popUp>div.ask>div.contentGr h2 {margin-bottom: 12px;}
 .popUp>div.ask>div.contentGr p {text-align: left;margin-bottom: 10px;font-size: 14px;}
 .popUp>div.ask>div.contentGr input {margin-bottom: 20px;}
+
 .popUp>div.ask>div.contentGr textarea {width: 100%;border: 1px solid rgba(0, 0, 0,0.1);border-radius: 4px;padding: 10px;box-sizing: border-box;outline: none;}
