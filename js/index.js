@@ -27,7 +27,7 @@ $(document).ready(function() {
   $(".close").click(function() {
     $(".topBg").css({"display":"none"})
     $(".topPp").css({"display":"none"})
-    $("body").css({"overflow":"auto"})
+    $("body").css({"overflow":"visible"})
   })
 
 
@@ -45,7 +45,7 @@ $(document).ready(function() {
   $(".close").click(function() {
     $(".bottomBg").css({"display":"none"})
     $(".botomPp").css({"display":"none"})
-    $("body").css({"overflow":"auto"})
+    $("body").css({"overflow":"visible"})
   })
   
   // (이동)
