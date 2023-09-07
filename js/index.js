@@ -59,6 +59,23 @@ $(document).ready(function() {
 
 
 
+    // index 페이지 메인타입 모달창
+    $("nav .type").click(function() {
+      $(".modal_home_wrap").css({"display":"block"})
+    });
+  
+    $(".modal_close, .modal_home_wrap").click(function() {
+      $(".modal_home_wrap").css({"display":"none"})
+    })
+  
+
+
+
+
+
+
+
+
 
 
 

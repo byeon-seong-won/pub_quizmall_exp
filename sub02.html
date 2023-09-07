@@ -18,13 +18,13 @@
                 <div class="popUp topPp">
                     <div class="ask">
                         <div class="contentGr">
-                            <h3>문의하기</h3>
+                            <h2>문의하기</h2>
                             <p>퀴즈명</p>
                             <input type="text" placeholder="문의하실 퀴즈명을 입력해 주세요.">
                             <p>연락처</p>
                             <input type="text" placeholder="연락처를 입력해 주세요.">
                             <p>문의내용</p>
-                            <textarea cols="20" rows="6" placeholder="*정확한 답변을 위해 상세내용을 입력해 주세요.&#13;&#10;*문의 답변에는 영업일 기준 3~5일 정도 소요될 수 있습니다." onblur="this.placeholder = '*정확한 답변을 위해 상세내용을 입력해 주세요.&#13;&#10;*문의 답변에는 영업일 기준 3~5일 정도 소요될 수 있습니다.'"></textarea>
+                            <textarea cols="20" rows="6" placeholder="*정확한 답변을 위해 상세내용을 입력해 주세요.&#13;&#10;*문의 답변에는 영업일 기준 3~5일 정도 소요될 수 있습니다."></textarea>
                         </div>
                         <div class="btnGr">
                             <button type="submit" class="close">취소</button><button>등록하기</button>
@@ -36,35 +36,41 @@
     </header>
     <section>
         <div class="tabsection">
-            <!-- <ul class="tab">
+            <!--ul class="tab">
                 <li class="on" data-alt="tab01">퀴즈적립</li>
                 <li data-alt="tab02">쇼핑적립</li>
-            </ul> -->
+            </ul-->
             <div class="tabContent tabContent_sb">
                 <div class="active" id="tab01">
-                    <p><span>10시간 전</span> <span>seongwonbyeonnnnnnnn</span> 님이 <span>10,000</span>캐시를 받아갔어요!</p> 
+                    <p><span class="coin">C</span><span>10시간 전</span> <span>seongwonbyeonnnnnnnn</span> 님이 <span>10,000</span>캐시를 받아갔어요!</p> 
                     <div class="imgBefore">
-                        <div class="imgbox"><img src="img/mainImg.png" alt="mainImg" title="mainImg" class="mainImg"></div>
-                        <div class="imgbotton">
-                            <img src="img/mainIcon.png" alt="mainIcon" title="mainIcon">
+                        <img src="img/mainImg.png" alt="mainImg" title="mainImg" class="mainImg">
+                        <div>
+                            <img src="img/pericon.png" alt="pericon" title="pericon" class="pericon">
                             <span><span class="roboto">3,000</span>명 중 <span class="roboto">528</span>명 참여가능</span>
                         </div>
                     </div>
                     <div class="contentbt">
                         <h2>하나은행 적금 오늘만 드리는 혜택!</h2>
                         <p>
-                            적금은 당연히 1년 만기? No No 적금은 당연히 1년 만기? 사용자입력줄사용자입력줄 <br>
-                            1개월 만기도 가능한 초단기 적금 등장!사용자입력줄<br><br>
-                            라이브 방송 보고 적금 가입하면 <br>1천 하나머니 + <br>
+                            적금은 당연히 1년 만기? No No ~ 
+                            1개월 만기도 가능한 초단기 적금 등장!<br>
+                            라이브 방송 보고 적금 가입하면 1천 하나머니 + <br>
                             메가커피 아메리카노 전원증정!
                         </p>
+                    </div>
+                    <div class="bd"></div>
+                    <div class="contentbt">
                         <div class="hintbox">
-                            <h3>Hint!</h3>
+                            <h2>Hint!</h2>
                             <p>아래 "정답찾기"버튼을 눌러 <br class="mobfir">정답을 찾아보세요.</p>
                             <button>정답찾기</button>
                         </div>
+                    </div>
+                    <div class="bd"></div>
+                    <div class="contentbt">
                         <div class="winlist">
-                            <h3>당첨을 축하드려요!</h3>
+                            <h2>당첨을 축하드려요!</h2>
                             <ul>
                                 <li>
                                     <div>
@@ -145,8 +151,8 @@
                 <!-- 01 정답입력 -->
                 <div class="inputtext" style="display: none;">
                     <div class="contentGr">
-                        <h3>정답입력</h3>
-                        <input type="text" placeholder="띄어쓰기 없이 입력해 주세요.">
+                        <h2>정답입력</h2>
+                        <input type="text" placeholder="정답을 입력해주세요.">
                     </div>
                     <div class="btnGr">
                         <button type="submit" class="close">취소</button><button>입력</button>
@@ -156,7 +162,7 @@
                 <!-- 정답일때 -->
                 <div class="correct">
                     <div class="contentGr">
-                        <h3>정답입니다!</h3>
+                        <h2>정답입니다!</h2>
                         <img src="img/answer.png" alt="answer" title="answer" class="conGRimg01">
                         <p class="detail">
                             <span><span class="roboto">3000</span>포인트</span>가 적립되었습니다.
@@ -172,7 +178,7 @@
                         <img src="img/btn_close.png" alt="close" title="close" class="close">
                     </a>
                     <div class="contentGr">
-                        <h3>틀렸어요!</h3>
+                        <h2>아이쿠ㅠ 오답입니다!</h2>
                         <img src="img/noanswer.png" alt="noanswer" title="noanswer" class="conGRimg02">
                         <p class="detail">
                             <span>Hint를 보러 가볼까요?</span>
