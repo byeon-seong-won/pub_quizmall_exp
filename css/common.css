@@ -160,3 +160,23 @@ img{vertical-align:top;font-size:0;border:0;}
 
 /* roboto 적용 */
 .roboto {font-family: 'roboto', sans-serif;}
+
+
+
+
+
+
+
+/*---------- header style ----------*/
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+    border-bottom: 1px solid rgba(0, 0, 0,0.1);
+    padding: 0 20px; /* 좌우 여백 */
+}
+header nav span {cursor: pointer;}
+header nav>img {width: 20px;height: 16px;}
+header nav>img:nth-of-type(2) {width: 22px;height: 22px;cursor: pointer;}
+header nav h1 img {width: 60px;}
