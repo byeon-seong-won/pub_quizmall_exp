@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>서브페이지</title>
+    <title>Btype 서브페이지</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
-<body>
+<body class="typeBsb">
     <header>
         <nav>
             <img src="img/leftarr.png" alt="leftarr" title="leftarr">
@@ -36,10 +36,10 @@
     </header>
     <section>
         <div class="tabsection">
-            <!--ul class="tab">
+            <!-- <ul class="tab">
                 <li class="on" data-alt="tab01">퀴즈적립</li>
                 <li data-alt="tab02">쇼핑적립</li>
-            </ul-->
+            </ul> -->
             <div class="tabContent tabContent_sb">
                 <div class="active" id="tab01">
                     <p><span class="coin">C</span><span>10시간 전</span> <span>seongwonbyeonnnnnnnn</span> 님이 <span>10,000</span>캐시를 받아갔어요!</p> 
@@ -160,10 +160,10 @@
                 </div>
                 <!-- 02 결과화면 -->
                 <!-- 정답일때 -->
-                <div class="correct">
+                <div class="correct" style="display: none;">
                     <div class="contentGr">
                         <h2>정답입니다!</h2>
-                        <img src="img/answer.png" alt="answer" title="answer" class="conGRimg01">
+                        <img src="img/answer02.png" alt="answer" title="answer" class="conGRimg01">
                         <p class="detail">
                             <span><span class="roboto">3000</span>포인트</span>가 적립되었습니다.
                         </p>
@@ -173,13 +173,13 @@
                     </div>
                 </div>
                 <!-- 오답일때 -->
-                <div class="wrong" style="display: none;">
+                <div class="wrong" >
                     <a href="#none">
                         <img src="img/btn_close.png" alt="close" title="close" class="close">
                     </a>
                     <div class="contentGr">
                         <h2>아이쿠ㅠ 오답입니다!</h2>
-                        <img src="img/noanswer.png" alt="noanswer" title="noanswer" class="conGRimg02">
+                        <img src="img/noanswer02.png" alt="noanswer" title="noanswer" class="conGRimg02">
                         <p class="detail">
                             <span>Hint를 보러 가볼까요?</span>
                         </p>

@@ -4,15 +4,15 @@
 @import url(sub.css);
 
 
-/*---------- mainpage style ----------*/
+/* //////////////// mainpage Atype //////////////// */
 
 /* 메인페이지 컨텐츠 좌우 여백 */
-.tabsection .tabContent_idx {padding: 0 20px;}
+.typeA .tabsection .tabContent_idx {padding: 0 20px;}
 
 
 /* 메인페이지 컨텐츠 */
-.tabsection .tabContent.tabContent_idx {margin-top: 40px;}
-.tabsection .tabContent.tabContent_idx>div ul li {
+.typeA .tabsection .tabContent.tabContent_idx {margin-top: 40px;}
+.typeA .tabsection .tabContent.tabContent_idx>div ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,8 +24,8 @@
     margin-top: 10px;
     cursor: pointer;
 }
-.tabsection .tabContent.tabContent_idx>div ul li:first-child {margin-top: 0;}
-.tabsection .tabContent.tabContent_idx>div ul li>div>span:nth-of-type(1) {
+.typeA .tabsection .tabContent.tabContent_idx>div ul li:first-child {margin-top: 0;}
+.typeA .tabsection .tabContent.tabContent_idx>div ul li>div>span:nth-of-type(1) {
     display: inline-block;
     background-color: #FC414A;
     width: 42px;
@@ -36,7 +36,7 @@
     line-height: 18px;
     text-align: center;
 }
-.tabsection .tabContent.tabContent_idx>div ul li>div>span:nth-of-type(2) {
+.typeA .tabsection .tabContent.tabContent_idx>div ul li>div>span:nth-of-type(2) {
     display: inline-block;
     font-family: 'roboto', sans-serif;
     font-size: 12px;
@@ -46,14 +46,90 @@
     margin-right: 3px;
 }
 
-.tabsection .tabContent.tabContent_idx>div ul li>div p:nth-of-type(1) {font-size: 16px;font-weight: 500;color: #000;letter-spacing: -0.5px;line-height: 20px;margin-top: 10px;}
-.tabsection .tabContent.tabContent_idx>div ul li>div p:nth-of-type(2) {margin-top: 20px;font-weight: 500;font-size: 12px;color: #666;letter-spacing: -0.5px;}
-.tabsection .tabContent.tabContent_idx>div ul li img.pericon {width: 12px;height: 12px;margin-right: 10px;transform: translateY(3px);}
-.tabsection .tabContent.tabContent_idx>div ul li img.contentImg {width: 98px;height: 98px;}
+.typeA .tabsection .tabContent.tabContent_idx>div ul li>div p:nth-of-type(1) {font-size: 16px;font-weight: 500;color: #000;letter-spacing: -0.5px;line-height: 20px;margin-top: 10px;}
+.typeA .tabsection .tabContent.tabContent_idx>div ul li>div p:nth-of-type(2) {margin-top: 20px;font-weight: 500;font-size: 12px;color: #666;letter-spacing: -0.5px;}
+.typeA .tabsection .tabContent.tabContent_idx>div ul li img.pericon {width: 12px;height: 12px;margin-right: 10px;transform: translateY(3px);}
+.typeA .tabsection .tabContent.tabContent_idx>div ul li img.contentImg {width: 98px;height: 98px;}
 
 
 
 /* 컨텐츠 이미지, 내용 사이 간격 */
 @media (max-width: 359.9px) {
     .tabsection .tabContent.tabContent_idx>div ul li {column-gap: 10px;}
+}
+
+
+
+
+
+
+/* //////////////// mainpage Btype //////////////// */
+
+/* 메인페이지 컨텐츠 좌우 여백 */
+.typeB .tabsection .tabContent_idx {padding: 0 20px;}
+.typeB .tabsection .tabContent.tabContent_idx div ul{display:grid;grid-template-columns: repeat(2,1fr);grid-gap:10px;grid-row-gap: 20px;}
+.typeB .tabsection .tabContent.tabContent_idx>div ul li {
+    align-items: center;
+    background-color: #F4F4F4;
+    border: 1px solid rgba(0, 0, 0,0.1);
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+}
+
+.typeB .tabsection .tabContent.tabContent_idx div.top_bg{
+    background:url(../img/bg_b.png) repeat-x;
+    z-index:9999;
+    width:100%;
+    height:100px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: -0.5px;
+    z-index:99999;
+    position:absolute; 
+    width:100%;
+}
+.typeB .tabsection .tabContent.tabContent_idx div.top_bg p{padding:10px;}
+.thumb{border-top-left-radius: 10px; border-top-right-radius: 10px; width:100%;}
+.typeB .tabsection .tabContent.tabContent_idx div.cont{padding:0 10px 20px;}
+.typeB .tabsection .tabContent.tabContent_idx div.cont div{display:table;width:100%;margin-top:-11px;z-index:9999999;}
+.typeB .tabsection .tabContent.tabContent_idx div ul li>div.cont div p{padding:0;width:100%;display:table-cell;text-align: center;}
+.typeB .tabsection .tabContent.tabContent_idx div ul li>div.cont div span.active {background-color: #12BD7E;color: #fff;}
+.typeB .tabsection .tabContent.tabContent_idx div ul li>div.cont div span {
+    background-color: #ddd;
+    height: 18px;
+    border-radius: 20px;
+    color: #aaa;
+    font-size: 12px;
+    line-height: 19px;
+    padding:5px 10px;
+    margin:0 auto;
+    text-align:center;
+}
+.typeB .tabsection .tabContent.tabContent_idx div ul li>div p.tit {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    letter-spacing: -0.5px;
+    line-height: 20px;
+    margin-top:16px;
+    text-align: center;
+    height:40px;
+    width:100%;
+    overflow: hidden;
+    text-overflow: ellipsis;  /* 말줄임 적용 */
+    -webkit-line-clamp: 2; /* 몇줄 보이게할지 */
+    -webkit-box-orient: vertical; 
+}
+.typeB .tabsection .tabContent.tabContent_idx div ul li img.pericon {width: 12px;height: 12px;margin-right:4px;transform: translateY(3px);}
+.typeB .tabsection .tabContent.tabContent_idx div ul li img.contentImg {width: 98px;height: 98px;}
+
+
+
+/* 컨텐츠 이미지, 내용 사이 간격 */
+@media (max-width: 359.9px) {
+    .typeB .tabsection .tabContent.tabContent_idx div ul li {column-gap: 10px;}
 }

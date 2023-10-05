@@ -145,5 +145,42 @@
 .popUp>div.ask>div.contentGr h2 {margin-bottom: 12px;}
 .popUp>div.ask>div.contentGr p {text-align: left;margin-bottom: 10px;font-size: 14px;}
 .popUp>div.ask>div.contentGr input {margin-bottom: 20px;}
-
 .popUp>div.ask>div.contentGr textarea {width: 100%;border: 1px solid rgba(0, 0, 0,0.1);border-radius: 4px;padding: 10px;box-sizing: border-box;outline: none;}
+
+
+
+
+
+
+.typeBsb .popUp>div>div.btnGr {margin: 40px 0; }
+.typeBsb .popUp>div>div.btnGr button{
+    border-radius: 8px;
+    font-size:15px;
+    height:44px;
+    width:50%;
+    border:none;
+    line-height:44px;
+}
+.typeBsb .inputtext, .typeBsb .wrong {padding:0 20px;}
+.typeBsb .inputtext .btnGr,
+.typeBsb .wrong .btnGr,
+.typeBsb .ask .btnGr {display:flex;width:100%;gap: 10px;}
+
+.typeBsb .inputtext .btnGr button:nth-child(1),
+.typeBsb .wrong .btnGr button:nth-child(1),
+.typeBsb .ask .btnGr button:nth-child(1) {border:solid 1px #12BD7E;color: #12BD7E; background-color:#fff;}
+
+.typeBsb .inputtext .btnGr button:nth-child(2),
+.typeBsb .wrong .btnGr button:nth-child(2),
+.typeBsb .ask .btnGr button:nth-child(2) {background-color: #12BD7E;color: #fff; }
+.typeBsb .correct .btnGr button {background-color: #12BD7E;color: #fff; }
+.typeBsb .popUp>div>div.contentGr input {border:none; border-bottom: 1px solid #aaa; height: 44px;width: 100%; box-sizing: border-box;outline: none;}
+.typeBsb .popUp>div>div.contentGr textarea{border-radius: 4px; border: 1px solid #aaa;} 
+.typeBsb .popUp>div.ask>div.contentGr textarea::placeholder,
+.typeBsb .popUp>div>div.contentGr input::placeholder {color: #bbb;}
+.typeBsb .popUp>div>div.contentGr input:focus {border:none;  border-bottom: 1px solid #000;}
+.typeBsb .popUp>div.ask>div.contentGr textarea:focus {border:solid 1px #000; }
+.typeBsb .popUp>div>div.contentGr>p.detail {font-size: 16px;margin-top: 30px;}
+.typeBsb .popUp>div>div.contentGr>p.detail>span {color: #12BD7E;font-weight: bold;}
+.typeBsb .popUp>div>div.contentGr img.conGRimg01 {width: 124px;}
+.typeBsb .popUp>div>div.contentGr img.conGRimg02 {width: 130px;height: 130px;}
